@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "Hard Boiled Egg",
+    "cookTime": "25m",
+    "difficulty": "Easy",
+    "servings": 4,
+    "featured": true,
+    "labels": ["breakfast", "snack", "basics"],
+    "steps": [
+      "Place eggs in pan",
+      "Add cold water until eggs are covered by 1 inch of water",
+      "Heat on high until the water boils",
+      "Remove from burner and cover pan",
+      "Let stand for about 12 minutes",
+      "Drain immediately and cool under cold running water"
+    ],
+    "ingredients": [
+      "4 Large Eggs"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Bread",
+    "cookTime": "50m",
+    "difficulty": "Medium",
+    "servings": 32,
+    "featured": false,
+    "labels": ["baking", "basics"],
+    "steps": [
+    ],
+    "ingredients": [
+      "1 Package Yeast",
+      "2 1/4 Cups Warm Water",
+      "3 Tablespoons Sugar",
+      "1 Tablespoon Salt",
+      "2 Tablespoons Vegetable Oil",
+      "6 1/4 Cups All Purpose Flour"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Vanilla Layer Cake",
+    "cookTime": "2h",
+    "difficulty": "Hard",
+    "servings": 12,
+    "featured": false,
+    "labels": ["dessert", "cake"]
+  },
+  {
+    "id": 4,
+    "title": "Quinoa and Kale Salad",
+    "cookTime": "30m",
+    "difficulty": "Easy",
+    "servings": 8,
+    "featured": false,
+    "labels": ["salad", "healthy", "vegan", "gluten free"]
+  },
+  {
+    "id": 5,
+    "title": "Baked Mac N Cheese",
+    "cookTime": "35m",
+    "difficulty": "Easy",
+    "servings": 4,
+    "featured": false,
+    "labels": ["lunch", "dinner", "comfort", "vegetarian"]
+  }
+]
