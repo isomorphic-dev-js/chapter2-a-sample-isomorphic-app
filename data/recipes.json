@@ -5,19 +5,7 @@
     "cookTime": "25m",
     "difficulty": "Easy",
     "servings": 4,
-    "featured": true,
-    "labels": ["breakfast", "snack", "basics"],
-    "steps": [
-      "Place eggs in pan",
-      "Add cold water until eggs are covered by 1 inch of water",
-      "Heat on high until the water boils",
-      "Remove from burner and cover pan",
-      "Let stand for about 12 minutes",
-      "Drain immediately and cool under cold running water"
-    ],
-    "ingredients": [
-      "4 Large Eggs"
-    ]
+    "labels": ["breakfast", "snack", "basics"]
   },
   {
     "id": 2,
@@ -25,18 +13,7 @@
     "cookTime": "50m",
     "difficulty": "Medium",
     "servings": 32,
-    "featured": false,
-    "labels": ["baking", "basics"],
-    "steps": [
-    ],
-    "ingredients": [
-      "1 Package Yeast",
-      "2 1/4 Cups Warm Water",
-      "3 Tablespoons Sugar",
-      "1 Tablespoon Salt",
-      "2 Tablespoons Vegetable Oil",
-      "6 1/4 Cups All Purpose Flour"
-    ]
+    "labels": ["baking", "basics"]
   },
   {
     "id": 3,
@@ -44,7 +21,6 @@
     "cookTime": "2h",
     "difficulty": "Hard",
     "servings": 12,
-    "featured": false,
     "labels": ["dessert", "cake"]
   },
   {
@@ -53,7 +29,6 @@
     "cookTime": "30m",
     "difficulty": "Easy",
     "servings": 8,
-    "featured": false,
     "labels": ["salad", "healthy", "vegan", "gluten free"]
   },
   {

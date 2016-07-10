@@ -2,27 +2,34 @@
   "name": "overview-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "build:server": "./node_modules/.bin/babel server.es6 -o server.js < server.es6",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prestart": "npm run build:server",
+    "clean": "rm -R dist",
+    "build:server": "./node_modules/.bin/babel src -d dist",
+    "build:browser": "webpack",
+    "prestart": "npm run build:server && npm run build:browser",
     "start": "node server.js"
   },
   "author": "elyseko",
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.0",
-    "react": "^15.1.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
     "react-redux": "^4.4.5",
     "react-router": "^2.4.1",
-    "redux": "^3.5.2"
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.1.0",
+    "superagent": "^2.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.10.1",
     "babel-core": "^6.10.4",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "css-loader": "^0.23.1",
+    "style-loader": "^0.13.1",
     "webpack": "^1.13.1"
   }
 }
