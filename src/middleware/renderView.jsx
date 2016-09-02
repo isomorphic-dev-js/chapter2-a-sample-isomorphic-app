@@ -13,8 +13,8 @@ const store = initRedux();
 // Fetch data for the route
 // This example only has one route
 //so we assume it needs the getHomePageData action
-store.dispatch(actions.getHomePageData())
-  .then(() => {
+store.dispatch(actions.getHomePageData()).then(() => {
+    console.log("hi")
     let html;
     const dataToSerialize = store.getState();
     console.log("data to serialize", dataToSerialize)

@@ -2,6 +2,6 @@
   margin-top: 60px;
 }
 
-.recipes .item {
-
+.ui.items>.item>.image {
+  max-height: 100px;
 }

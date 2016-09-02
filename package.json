@@ -5,10 +5,11 @@
   "main": "server.js",
   "scripts": {
     "clean": "rm -R dist",
+    "copy:data": "cp -r ./data/ ./dist/data/",
     "build:server": "./node_modules/.bin/babel src -d dist",
     "build:browser": "webpack",
-    "prestart": "npm run build:server && npm run build:browser",
-    "start": "node server.js"
+    "prestart": "npm run clean && npm run build:server && npm run build:browser && npm run copy:data",
+    "start": "node dist/server.js"
   },
   "author": "elyseko",
   "license": "ISC",
@@ -17,8 +18,8 @@
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
     "react-redux": "^4.4.5",
-    "react-router": "^2.4.1",
     "redux": "^3.5.2",
+    "redux-promise-middleware": "^4.0.0",
     "redux-thunk": "^2.1.0",
     "superagent": "^2.0.0"
   },
