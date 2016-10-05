@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "clean": "rm -R dist",
+    "clean": "rm -rf dist",
     "copy:data": "cp -r ./data/ ./dist/data/",
     "build:server": "./node_modules/.bin/babel src -d dist",
     "build:browser": "webpack",
