@@ -14,7 +14,6 @@ export function fetchRecipes() {
               console.log("err", err)
               reject(err);
             }
-            // console.log("recipes", res.body)
             resolve(res.body.recipes);
           })
         })
@@ -23,7 +22,6 @@ export function fetchRecipes() {
 }
 
 export function fetchFeaturedRecipe() {
-  console.log("featured recipe")
   return dispatch => {
     return dispatch({
         type: 'SET_FEATURED_RECIPE',
@@ -33,7 +31,6 @@ export function fetchFeaturedRecipe() {
               if (err) {
                 reject(err);
               }
-              console.log("featured")
               resolve(res.body.recipe);
             })
         })
@@ -43,7 +40,6 @@ export function fetchFeaturedRecipe() {
 
 export function getHomePageData() {
   return (dispatch, getState) => {
-    console.log("getHomePageData")
     return Promise.all([
       dispatch(fetchFeaturedRecipe()),
       dispatch(fetchRecipes())
