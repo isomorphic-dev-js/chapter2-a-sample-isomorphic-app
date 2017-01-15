@@ -4,13 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "clean": "rm -rf dist",
-    "copy:data": "cp -r ./data/ ./dist/data/",
-    "build:server": "./node_modules/.bin/babel src -d dist",
     "build:browser": "webpack",
-    "prestart": "npm run clean && npm run build:server && npm run build:browser && npm run copy:data",
-    "start": "node dist/server.js",
-    "examples": "node examples-server.js"
+    "prestart": "npm run build:browser",
+    "start": "node src/server.js"
   },
   "author": "elyseko",
   "license": "ISC",
@@ -28,6 +24,9 @@
     "babel-cli": "^6.10.1",
     "babel-core": "^6.10.4",
     "babel-loader": "^6.2.4",
+    "babel-plugin-transform-es2015-destructuring": "^6.19.0",
+    "babel-plugin-transform-es2015-parameters": "^6.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.20.2",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",
     "css-loader": "^0.23.1",
