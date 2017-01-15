@@ -19,7 +19,7 @@ class App extends React.Component {
                 <a href="/" className="header item">Recipes Example App</a>
               </div>
             </div>
-            <div className="ui grid">
+            <div className="ui padded grid">
               <Recipes {...this.props}/>
               <Featured {...this.props.featuredRecipe}/>
             </div>

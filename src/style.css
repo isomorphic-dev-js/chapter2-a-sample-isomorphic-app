@@ -1,7 +1,3 @@
-.recipes.ui.items {
-  margin-top: 60px;
-}
-
-.ui.items>.item>.image {
+.ui.items>.item>.image, .ui.items>.item>.image>img {
   max-height: 100px;
 }
