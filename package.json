@@ -9,7 +9,8 @@
     "build:server": "./node_modules/.bin/babel src -d dist",
     "build:browser": "webpack",
     "prestart": "npm run clean && npm run build:server && npm run build:browser && npm run copy:data",
-    "start": "node dist/server.js"
+    "start": "node dist/server.js",
+    "examples": "node examples-server.js"
   },
   "author": "elyseko",
   "license": "ISC",
