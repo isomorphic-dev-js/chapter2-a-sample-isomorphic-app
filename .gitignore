@@ -2,3 +2,5 @@ node_modules
 .DS_Store
 dist
 browser.js
+bundle.js
+npm-debug.log
