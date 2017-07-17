@@ -4,6 +4,7 @@
 "cookTime": "25m",
   "difficulty": "Easy",
   "servings": 4,
+  "thumbnail": "egg.jpg",
   "labels": ["breakfast", "snack", "basics"],
   "steps": [
     "Place eggs in pan",

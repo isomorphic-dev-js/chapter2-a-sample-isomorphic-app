@@ -5,6 +5,8 @@
     "cookTime": "25m",
     "difficulty": "Easy",
     "servings": 4,
+    "thumbnail": "egg.jpg",
+    "featured": true,
     "labels": ["breakfast", "snack", "basics"]
   },
   {
@@ -13,6 +15,8 @@
     "cookTime": "50m",
     "difficulty": "Medium",
     "servings": 32,
+    "thumbnail": "bread.jpg",
+    "featured": false,
     "labels": ["baking", "basics"]
   },
   {
@@ -21,6 +25,8 @@
     "cookTime": "2h",
     "difficulty": "Hard",
     "servings": 12,
+    "thumbnail": "cake.jpg",
+    "featured": false,
     "labels": ["dessert", "cake"]
   },
   {
@@ -29,14 +35,17 @@
     "cookTime": "30m",
     "difficulty": "Easy",
     "servings": 8,
+    "thumbnail": "kale.jpg",
+    "featured": false,
     "labels": ["salad", "healthy", "vegan", "gluten free"]
   },
   {
     "id": 5,
-    "title": "Baked Mac N Cheese",
+    "title": "Baked Pasta",
     "cookTime": "35m",
     "difficulty": "Easy",
     "servings": 4,
+    "thumbnail": "pasta.jpg",
     "featured": false,
     "labels": ["lunch", "dinner", "comfort", "vegetarian"]
   }
