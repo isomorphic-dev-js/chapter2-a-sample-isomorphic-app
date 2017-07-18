@@ -39,7 +39,6 @@ app.get('/featured', (req, res) => {
 });
 
 // handle the isomorphic page render
-app.get('/', renderViewMiddleware);
 
 // start the app
 app.listen(3000, () => {

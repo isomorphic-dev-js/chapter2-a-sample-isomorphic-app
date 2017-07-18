@@ -6,12 +6,12 @@ import {
 import recipes from './recipe-reducer';
 import thunkMiddleware from 'redux-thunk';
 
-export default function (initialStore={}) {
+export default function () {
   const reducer = combineReducers({
     recipes
   });
-  let middleware = [thunkMiddleware]
+  let middleware = [thunkMiddleware];
   return compose(
     applyMiddleware(...middleware)
-  )(createStore)(reducer, initialStore);
+  )(createStore)(reducer);
 }

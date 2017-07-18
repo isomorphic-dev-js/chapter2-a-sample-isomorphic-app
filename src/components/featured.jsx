@@ -53,4 +53,10 @@ const Featured = (props) => {
   );
 }
 
+Featured.defaultProps = {
+  labels: [],
+  ingredients: [],
+  steps: []
+}
+
 export default Featured;
