@@ -1,6 +1,5 @@
 import express from 'express';
 import fs from 'fs';
-import renderViewMiddleware from './middleware/renderView'
 
 // init the app
 const app = express();
