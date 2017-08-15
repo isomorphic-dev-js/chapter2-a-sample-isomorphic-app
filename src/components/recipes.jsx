@@ -3,13 +3,13 @@ import React from 'react';
 export default class Recipes extends React.Component {
 
   renderRecipeItems() {
-    let items = [];
     if (!this.props.recipes) {
-      return items;
+      return [];
     }
-    this.props.recipes.forEach((item, index) => {
-      if (!item.featured) {
-        items.push(<div key={item.title+index} className="item">
+    return this.props.recipes.filter((item) => {
+      return !item.featured
+    }).map((item, index) => {
+      return <div key={item.title+index} className="item">
           <div className="ui small image"><img src={`http://localhost:3000/assets/${item.thumbnail}`} /></div>
           <div className="content">
             <div className="header">{item.title}</div>
@@ -20,10 +20,8 @@ export default class Recipes extends React.Component {
             </div>
             <div className="description">Tags: {item.labels.join(', ')}</div>
           </div>
-        </div>)
-      }
+      </div>
     });
-    return items;
   }
 
   render() {

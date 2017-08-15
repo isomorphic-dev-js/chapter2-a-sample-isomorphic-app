@@ -2,33 +2,25 @@ import React from 'react';
 
 const Featured = (props) => {
   const buildIngredients = (ingredients) => {
-    const list = [];
-
-    ingredients.forEach((ingredient, index) => {
-      list.push(
+    return ingredients.map((ingredient, index) => {
+      return (
         <li className="item"
             key={`${ingredient}-${index}`}>
           {ingredient}
         </li>
       );
     });
-
-    return list;
   }
 
   const buildSteps = (steps) => {
-    const list = [];
-
-    steps.forEach((step, index) => {
-      list.push(
+    return steps.map((step, index) => {
+      return (
         <li className="item"
             key={`${step}-${index}`}>
           {step}
         </li>
       );
     });
-
-    return list;
   }
 
   return (
