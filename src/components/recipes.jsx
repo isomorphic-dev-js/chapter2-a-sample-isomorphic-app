@@ -1,13 +1,13 @@
 import React from 'react';
 
-export default class Recipes extends React.Component {
+const Recipes = (props) => {
 
-  renderRecipeItems() {
+  const renderRecipeItems = () => {
     let items = [];
-    if (!this.props.recipes) {
+    if (!props.recipes) {
       return items;
     }
-    this.props.recipes.forEach((item, index) => {
+    props.recipes.forEach((item, index) => {
       if (!item.featured) {
         items.push(<div key={item.title+index} className="item">
           <div className="ui small image"><img src={`http://localhost:3000/assets/${item.thumbnail}`} /></div>
@@ -26,11 +26,11 @@ export default class Recipes extends React.Component {
     return items;
   }
 
-  render() {
-    return (
-        <div className="recipes ui items six wide column">
-          {this.renderRecipeItems()}
-        </div>
-    );
-  }
+  return (
+    <div className="recipes ui items six wide column">
+      {renderRecipeItems()}
+    </div>
+  );
 }
+
+export default Recipes;
