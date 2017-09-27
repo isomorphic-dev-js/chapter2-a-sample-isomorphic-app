@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build:browser": "webpack",
+    "build:browser": "node_modules/.bin/webpack",
     "prestart": "npm run build:browser",
     "start": "node src/server.js"
   },
