@@ -5,9 +5,6 @@ import renderViewMiddleware from './middleware/renderView'
 // init the app
 const app = express();
 
-// setup static files, server browser.js (webpacked file) from root
-app.use(express.static(__dirname));
-
 app.get('/recipes', (req, res) => {
   // Read and open the recipes json file
   fs.readFile(`${__dirname}/../data/recipes.json`, 'utf8', (err, data) => {
@@ -40,6 +37,9 @@ app.get('/featured', (req, res) => {
 
 // handle the isomorphic page render
 app.get('/', renderViewMiddleware);
+
+// setup static files, server browser.js (webpacked file) from root
+app.use(express.static(__dirname));
 
 // start the app
 app.listen(3000, () => {
