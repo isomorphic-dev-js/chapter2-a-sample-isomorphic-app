@@ -1,7 +1,7 @@
 import fetch from 'isomorphic-fetch';
 
-export const SET_RECIPES = 'SET_RECIPES';
-export const SET_FEATURED_RECIPE = 'SET_FEATURED_RECIPE';
+export const GET_RECIPES = 'GET_RECIPES';
+export const GET_FEATURED_RECIPE = 'GET_FEATURED_RECIPE';
 
 export function fetchRecipes() {
   return dispatch => {
@@ -10,7 +10,7 @@ export function fetchRecipes() {
     }).then((response) => {
       return response.json().then((data) => {
         return dispatch({
-          type: SET_RECIPES,
+          type: GET_RECIPES,
           data: data.recipes
         });
       });
@@ -27,7 +27,7 @@ export function fetchFeaturedRecipe() {
     }).then((response) => {
       return response.json().then((data) => {
         return dispatch({
-          type: SET_FEATURED_RECIPE,
+          type: GET_FEATURED_RECIPE,
           data: data.recipe
         });
       });
