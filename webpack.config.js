@@ -1,7 +1,7 @@
 module.exports = {
   entry: "./src/main.jsx",
   output: {
-    path: __dirname + '/dist/',
+    path: __dirname + '/src/',
     filename: "browser.js"
   },
   module: {
