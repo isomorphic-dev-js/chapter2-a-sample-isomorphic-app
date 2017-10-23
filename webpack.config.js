@@ -1,14 +1,14 @@
 module.exports = {
   entry: "./src/main.jsx",
   output: {
-    path: __dirname + '/src/',
+    path: __dirname + '/dist/',
     filename: "browser.js"
   },
   module: {
     rules: [
       {
         test: /\.(jsx|es6)$/,
-        exclude: /node_modules|examples/,
+        exclude: /node_modules/,
         loader: "babel-loader"
       },
       {
